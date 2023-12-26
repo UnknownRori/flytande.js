@@ -1,0 +1,49 @@
+{
+    "name": "@unknownrori/flytande.js",
+    "version": "0.0.0",
+    "description": "Simple and yet fluent general purpose query builder for sql language",
+    "files": [
+        "dist",
+        "package.json"
+    ],
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsup ./src",
+        "lint": "eslint ./src",
+        "lint:fix": "eslint ./src --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UnknownRori/flytande.js.git"
+    },
+    "keywords": [
+        "querybuilder",
+        "query",
+        "sql",
+        "db",
+        "database"
+    ],
+    "author": "UnknownRori",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/UnknownRori/flytande.js/issues"
+    },
+    "homepage": "https://github.com/UnknownRori/flytande.js#readme",
+    "devDependencies": {
+        "@types/node": "^20.10.5",
+        "@typescript-eslint/eslint-plugin": "^6.16.0",
+        "@typescript-eslint/parser": "^6.16.0",
+        "eslint": "^8.56.0",
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3"
+    }
+}
