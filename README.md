@@ -6,12 +6,12 @@
 &ensp;[<kbd> <br> Usage <br> </kbd>](#usage)&ensp;
 &ensp;[<kbd> <br> Development <br> </kbd>](#development)&ensp;
 &ensp;[<kbd> <br> Note <br> </kbd>](#note)&ensp;
-<br><br><br><br></div>
+<br><br><br></div>
 
 > [!CAUTION]
-> Currently this project is fun project, not inteded for production use cases
+> Currently this project is fun project, not intended for production use cases
 
-flytande.js is a simple and yet fluent query builder heavily inspired with Laravel Query Builder, this project currently in development
+flytande.js is a simple and yet fluent query builder heavily inspired with Laravel Query Builder, this project currently in development.
 
 ## Install
 
