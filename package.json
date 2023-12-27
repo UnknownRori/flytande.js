@@ -47,5 +47,8 @@
         "tsup": "^8.0.1",
         "typescript": "^5.3.3",
         "vitest": "^1.1.0"
+    },
+    "dependencies": {
+        "@sniptt/monads": "^0.5.10"
     }
 }
