@@ -18,7 +18,8 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsup ./src",
-        "lint": "eslint ./src",
+        "test": "vitest",
+        "lint": "eslint ./src ./tests",
         "lint:fix": "eslint ./src --fix"
     },
     "repository": {
@@ -44,6 +45,7 @@
         "@typescript-eslint/parser": "^6.16.0",
         "eslint": "^8.56.0",
         "tsup": "^8.0.1",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "vitest": "^1.1.0"
     }
 }
