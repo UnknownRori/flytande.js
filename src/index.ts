@@ -1,4 +1,4 @@
-import QueryBuilder from './QueryBuilder';
+import QueryBuilder from './Query/QueryBuilder';
 
 export {
     QueryBuilder,

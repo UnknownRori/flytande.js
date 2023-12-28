@@ -1,5 +1,5 @@
 import { test, expect } from 'vitest';
-import { QueryBuilder } from '../../src';
+import { QueryBuilder } from '../src';
 
 const tableName = 'flytande';
 

@@ -1,8 +1,7 @@
 import { Option } from '@sniptt/monads';
 
-type Column = string;
 type Table = string;
-type SelectStatement = '*' | Column | Column[];
+type SelectStatement = string | string[];
 type Operator = '=' | '!=' | '<>' | '<' | '>' | '<=' | '>=';
 type WhereOperator = Operator | 'LIKE' | 'BETWEEN' | 'IN' | 'IS'
 type JoinType = 'left' | 'right' | 'inner' | 'cross' | 'full' | null;
@@ -18,16 +17,19 @@ type JoinStatement = {
 type WhereStatement = {
     column: Column,
     operator: WhereOperator,
-    value: string,
+    value: string|number,
     nextWhereStatement: Option<'OR' | 'AND'>
 };
 
-type Query = {
-    table: Table,
+type SelectQuery = {
+    table: string,
     select: SelectStatement,
-    join: Array<JoinStatement>,
-    where: Array<WhereStatement>,
+    where: WhereStatement[],
+    join: JoinStatement[],
 }
+
+
+type Query = SelectQuery;
 
 export {
     Table,

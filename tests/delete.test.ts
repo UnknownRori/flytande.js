@@ -1,10 +1,10 @@
 import { test, expect } from 'vitest';
-import { QueryBuilder } from '../../src';
+import { QueryBuilder } from '../src';
 
 const tableName = 'flytande';
 
 test(`It should generate raw query DELETE FROM ${tableName}`, function () {
-    const query = QueryBuilder.table(tableName).where('id', 1).delete().toRawQuery();
+    const query = QueryBuilder.table(tableName).where('id', '=', 1).delete().toRawQuery();
 
     expect(query).toBe(`DELETE FROM ${tableName} WHERE id = 1`);
 });
